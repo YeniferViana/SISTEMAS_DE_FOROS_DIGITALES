@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <title>Foros Digitales</title>
 </head>
 
@@ -26,6 +27,7 @@
         </div>
 
         <div class="botones">
+            <button>inicio</button>
             <button>Foros</button>
             <button>Grupos</button>
             <button>Mensajes</button>
@@ -51,5 +53,108 @@
 
     </div>
 
+   <div class="nuestra">
+        <h2>Nuestra comunidad en números</h2>
+
+       <div class="usu">
+            <i class="fas fa-user-friends"></i>
+            <h3>12,500</h3>
+            <p>Usuarios registrados</p>
+        </div>
+
+        <div class="pos">
+            <i class="fas fa-comment-dots"></i>
+            <h3>35,600</h3>
+            <p>Posts y discusiones</p>
+        </div>
+
+        <div class="rec">
+            <i class="fas fa-folder-open"></i>
+            <h3>8,900</h3>
+            <p>Recursos compartidos</p>
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- 1. FORMULARIO ESTRUCTURADO PARA ENTRADA DE DATOS -->
+        <div class="formulario">
+            <h2>Crear nueva publicación</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="usuario">Usuario:</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="Tu nombre o alias" required>
+                </div>
+                <br>
+                <div>
+                    <label for="categoria">Categoría:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecciona una categoría...</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="programacion">Programación</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="titulo">Título del tema:</label><br>
+                    <input type="text" id="titulo" name="titulo" placeholder="Escribe un título" required>
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu consulta o aporte..." required></textarea>
+                </div>
+                <br>
+                <button type="submit">Publicar en el foro</button>
+            </form>
+        </div>
+
+        <hr>
+
+       <!-- 2. TABLA ESTRUCTURADA PARA EXHIBICIÓN DE REGISTROS -->
+        <section class="registros" aria-labelledby="titulo-recientes">
+            <h2 id="titulo-recientes">Temas publicados recientemente</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Categoría</th>
+                        <th>Título</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ana_Dev</td>
+                        <td>Programación</td>
+                        <td>¿Cómo conectar HTML con una base de datos?</td>
+                        <td>13/11/2026</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carlos89</td>
+                        <td>Tecnología</td>
+                        <td>Recomendaciones de editores de código</td>
+                        <td>12/11/2026</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>LuciaM</td>
+                        <td>General</td>
+                        <td>Bienvenidos a los Foros Digitales</td>
+                        <td>10/11/2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Foros Digitales — Comunidad Académica</p>
+    </footer>
 </body>
 </html>
